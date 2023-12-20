@@ -1,12 +1,12 @@
 import 'package:equatable/equatable.dart';
 
-class WeatherEntity extends Equatable {
+class WeatherDescriptionEntity extends Equatable {
   final int? id;
   final String? main;
   final String? description;
   final String? icon;
 
-  const WeatherEntity(
+  const WeatherDescriptionEntity(
       {required this.id,
       required this.main,
       required this.description,

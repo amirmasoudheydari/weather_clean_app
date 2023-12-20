@@ -17,45 +17,38 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$ApiResultModel<T> {
   @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
+  TResult when<TResult extends Object?>({
     required TResult Function(T data) success,
     required TResult Function(ErrorResultModel errorResultEntity) failure,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
+  TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(T data)? success,
     TResult? Function(ErrorResultModel errorResultEntity)? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
+  TResult maybeWhen<TResult extends Object?>({
     TResult Function(T data)? success,
     TResult Function(ErrorResultModel errorResultEntity)? failure,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_ApiRsultModel<T> value) $default, {
+  TResult map<TResult extends Object?>({
     required TResult Function(Success<T> value) success,
     required TResult Function(Failure<T> value) failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_ApiRsultModel<T> value)? $default, {
+  TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Success<T> value)? success,
     TResult? Function(Failure<T> value)? failure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_ApiRsultModel<T> value)? $default, {
+  TResult maybeMap<TResult extends Object?>({
     TResult Function(Success<T> value)? success,
     TResult Function(Failure<T> value)? failure,
     required TResult orElse(),
@@ -77,117 +70,8 @@ class _$ApiResultModelCopyWithImpl<T, $Res, $Val extends ApiResultModel<T>>
 
   // ignore: unused_field
   final $Val _value;
-
   // ignore: unused_field
   final $Res Function($Val) _then;
-}
-
-/// @nodoc
-abstract class _$$ApiRsultModelImplCopyWith<T, $Res> {
-  factory _$$ApiRsultModelImplCopyWith(_$ApiRsultModelImpl<T> value,
-          $Res Function(_$ApiRsultModelImpl<T>) then) =
-      __$$ApiRsultModelImplCopyWithImpl<T, $Res>;
-}
-
-/// @nodoc
-class __$$ApiRsultModelImplCopyWithImpl<T, $Res>
-    extends _$ApiResultModelCopyWithImpl<T, $Res, _$ApiRsultModelImpl<T>>
-    implements _$$ApiRsultModelImplCopyWith<T, $Res> {
-  __$$ApiRsultModelImplCopyWithImpl(_$ApiRsultModelImpl<T> _value,
-      $Res Function(_$ApiRsultModelImpl<T>) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$ApiRsultModelImpl<T> implements _ApiRsultModel<T> {
-  const _$ApiRsultModelImpl();
-
-  @override
-  String toString() {
-    return 'ApiResultModel<$T>()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ApiRsultModelImpl<T>);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
-    required TResult Function(T data) success,
-    required TResult Function(ErrorResultModel errorResultEntity) failure,
-  }) {
-    return $default();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
-    TResult? Function(T data)? success,
-    TResult? Function(ErrorResultModel errorResultEntity)? failure,
-  }) {
-    return $default?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
-    TResult Function(T data)? success,
-    TResult Function(ErrorResultModel errorResultEntity)? failure,
-    required TResult orElse(),
-  }) {
-    if ($default != null) {
-      return $default();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_ApiRsultModel<T> value) $default, {
-    required TResult Function(Success<T> value) success,
-    required TResult Function(Failure<T> value) failure,
-  }) {
-    return $default(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_ApiRsultModel<T> value)? $default, {
-    TResult? Function(Success<T> value)? success,
-    TResult? Function(Failure<T> value)? failure,
-  }) {
-    return $default?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_ApiRsultModel<T> value)? $default, {
-    TResult Function(Success<T> value)? success,
-    TResult Function(Failure<T> value)? failure,
-    required TResult orElse(),
-  }) {
-    if ($default != null) {
-      return $default(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _ApiRsultModel<T> implements ApiResultModel<T> {
-  const factory _ApiRsultModel() = _$ApiRsultModelImpl<T>;
 }
 
 /// @nodoc
@@ -195,7 +79,6 @@ abstract class _$$SuccessImplCopyWith<T, $Res> {
   factory _$$SuccessImplCopyWith(
           _$SuccessImpl<T> value, $Res Function(_$SuccessImpl<T>) then) =
       __$$SuccessImplCopyWithImpl<T, $Res>;
-
   @useResult
   $Res call({T data});
 }
@@ -255,8 +138,7 @@ class _$SuccessImpl<T> implements Success<T> {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
+  TResult when<TResult extends Object?>({
     required TResult Function(T data) success,
     required TResult Function(ErrorResultModel errorResultEntity) failure,
   }) {
@@ -265,8 +147,7 @@ class _$SuccessImpl<T> implements Success<T> {
 
   @override
   @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
+  TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(T data)? success,
     TResult? Function(ErrorResultModel errorResultEntity)? failure,
   }) {
@@ -275,8 +156,7 @@ class _$SuccessImpl<T> implements Success<T> {
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
+  TResult maybeWhen<TResult extends Object?>({
     TResult Function(T data)? success,
     TResult Function(ErrorResultModel errorResultEntity)? failure,
     required TResult orElse(),
@@ -289,8 +169,7 @@ class _$SuccessImpl<T> implements Success<T> {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_ApiRsultModel<T> value) $default, {
+  TResult map<TResult extends Object?>({
     required TResult Function(Success<T> value) success,
     required TResult Function(Failure<T> value) failure,
   }) {
@@ -299,8 +178,7 @@ class _$SuccessImpl<T> implements Success<T> {
 
   @override
   @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_ApiRsultModel<T> value)? $default, {
+  TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Success<T> value)? success,
     TResult? Function(Failure<T> value)? failure,
   }) {
@@ -309,8 +187,7 @@ class _$SuccessImpl<T> implements Success<T> {
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_ApiRsultModel<T> value)? $default, {
+  TResult maybeMap<TResult extends Object?>({
     TResult Function(Success<T> value)? success,
     TResult Function(Failure<T> value)? failure,
     required TResult orElse(),
@@ -326,7 +203,6 @@ abstract class Success<T> implements ApiResultModel<T> {
   const factory Success({required final T data}) = _$SuccessImpl<T>;
 
   T get data;
-
   @JsonKey(ignore: true)
   _$$SuccessImplCopyWith<T, _$SuccessImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
@@ -337,7 +213,6 @@ abstract class _$$FailureImplCopyWith<T, $Res> {
   factory _$$FailureImplCopyWith(
           _$FailureImpl<T> value, $Res Function(_$FailureImpl<T>) then) =
       __$$FailureImplCopyWithImpl<T, $Res>;
-
   @useResult
   $Res call({ErrorResultModel errorResultEntity});
 }
@@ -397,8 +272,7 @@ class _$FailureImpl<T> implements Failure<T> {
 
   @override
   @optionalTypeArgs
-  TResult when<TResult extends Object?>(
-    TResult Function() $default, {
+  TResult when<TResult extends Object?>({
     required TResult Function(T data) success,
     required TResult Function(ErrorResultModel errorResultEntity) failure,
   }) {
@@ -407,8 +281,7 @@ class _$FailureImpl<T> implements Failure<T> {
 
   @override
   @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>(
-    TResult? Function()? $default, {
+  TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(T data)? success,
     TResult? Function(ErrorResultModel errorResultEntity)? failure,
   }) {
@@ -417,8 +290,7 @@ class _$FailureImpl<T> implements Failure<T> {
 
   @override
   @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>(
-    TResult Function()? $default, {
+  TResult maybeWhen<TResult extends Object?>({
     TResult Function(T data)? success,
     TResult Function(ErrorResultModel errorResultEntity)? failure,
     required TResult orElse(),
@@ -431,8 +303,7 @@ class _$FailureImpl<T> implements Failure<T> {
 
   @override
   @optionalTypeArgs
-  TResult map<TResult extends Object?>(
-    TResult Function(_ApiRsultModel<T> value) $default, {
+  TResult map<TResult extends Object?>({
     required TResult Function(Success<T> value) success,
     required TResult Function(Failure<T> value) failure,
   }) {
@@ -441,8 +312,7 @@ class _$FailureImpl<T> implements Failure<T> {
 
   @override
   @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>(
-    TResult? Function(_ApiRsultModel<T> value)? $default, {
+  TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Success<T> value)? success,
     TResult? Function(Failure<T> value)? failure,
   }) {
@@ -451,8 +321,7 @@ class _$FailureImpl<T> implements Failure<T> {
 
   @override
   @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>(
-    TResult Function(_ApiRsultModel<T> value)? $default, {
+  TResult maybeMap<TResult extends Object?>({
     TResult Function(Success<T> value)? success,
     TResult Function(Failure<T> value)? failure,
     required TResult orElse(),
@@ -469,7 +338,6 @@ abstract class Failure<T> implements ApiResultModel<T> {
       _$FailureImpl<T>;
 
   ErrorResultModel get errorResultEntity;
-
   @JsonKey(ignore: true)
   _$$FailureImplCopyWith<T, _$FailureImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
