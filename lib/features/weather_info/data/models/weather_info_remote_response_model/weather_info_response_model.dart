@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:weather_clean_app/core/utils/helpers/extention_functions.dart';
+import 'package:weather_clean_app/core/utils/helpers/extensiion_functiions/extention_functions.dart';
 import 'package:weather_clean_app/core/utils/mapper/data_mapper.dart';
 import 'package:weather_clean_app/features/weather_info/data/models/weather_info_remote_response_model/cloud_response_model.dart';
 import 'package:weather_clean_app/features/weather_info/data/models/weather_info_remote_response_model/coordinate_response_model.dart';
