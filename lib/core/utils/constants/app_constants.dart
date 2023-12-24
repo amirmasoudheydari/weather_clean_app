@@ -24,7 +24,7 @@ const String contentTypeValue = 'application/json';
 const String contentMultiPartTypeValue = 'multipart/from-data';
 
 // This is the time for every api call
-const Duration timeDuration = Duration(seconds: 20);
+const Duration timeOutDuration = Duration(seconds: 20);
 
 // The app base Url should be provide in this value
 const String devBaseUrl = 'https://api.openweathermap.org/data/2.5';
@@ -36,7 +36,7 @@ const String uatBaseUrl = 'https://api.openweathermap.org/data/2.5/uat';
 const String getWeatherDetails = '/weather';
 const String appIdKey = 'appid';
 const String appIdValue = '0ae6735afdc6f99d7af23db5d1bd1fbe';
-const String cityNameValue = 'q';
+const String cityNameKey = 'q';
 const String latitudeKey = 'lat';
 const String longitudeKey = 'lon';
 

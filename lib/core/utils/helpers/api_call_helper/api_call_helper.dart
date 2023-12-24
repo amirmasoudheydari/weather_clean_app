@@ -8,7 +8,7 @@ import 'package:weather_clean_app/core/commundomain/entities/error_result_model.
 import 'package:weather_clean_app/core/utils/constants/app_constants.dart';
 import 'package:weather_clean_app/core/utils/helpers/connectivity_helper/connectivity_checker_helper.dart';
 import 'package:weather_clean_app/core/utils/helpers/custom_exceptions/custom_connection_exception.dart';
-import 'package:weather_clean_app/core/utils/helpers/extensiion_functiions/extention_functions.dart';
+import 'package:weather_clean_app/core/utils/helpers/extension_function/extension_function.dart';
 
 @Injectable()
 class ApiCallHelper {
@@ -39,11 +39,11 @@ class ApiCallHelper {
 
     if (await _getConnectionState()) {
       try {
-        final String _url = '$baseUrl';
+        final String url = '$baseUrl';
 
         final http.Response response = await http
-            .get(_url.parseUri(params), headers: _sharedDefaultHeader)
-            .timeout(timeDuration);
+            .get(url.parseUri(params), headers: _sharedDefaultHeader)
+            .timeout(timeOutDuration);
 
         if (response.statusCode >= 200 && response.statusCode < 300) {
           return ApiResultModel<http.Response>.success(data: response);
