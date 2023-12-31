@@ -1,6 +1,7 @@
 import 'package:injectable/injectable.dart';
 import 'package:weather_clean_app/core/utils/constants/app_constants.dart';
 
+// ignore: constant_identifier_names
 enum ProductFlavor { DEV, QA, SIT, UAT, PROD }
 
 extension ProductFlavorExtension on ProductFlavor? {

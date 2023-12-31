@@ -5,7 +5,7 @@ abstract class UseCase<Type, Params> {
   Future<ApiResultModel<Type>> call(Params params);
 }
 
-class NoParams extends Equatable {
-  @override
-  List<Object?> get props => [];
-}
+// class NoParams extends Equatable {
+//   @override
+//   List<Object?> get props => [];
+// }

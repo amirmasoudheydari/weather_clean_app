@@ -4,17 +4,17 @@
   "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
   "entities": [
     {
-      "id": "1:6880007904931586657",
-      "lastPropertyId": "2:412756344256516116",
+      "id": "1:659175198335478770",
+      "lastPropertyId": "2:3628467804910156124",
       "name": "CloudsLocalEntity",
       "properties": [
         {
-          "id": "1:2949878487885422668",
+          "id": "1:2721111473364878454",
           "name": "all",
           "type": 6
         },
         {
-          "id": "2:412756344256516116",
+          "id": "2:3628467804910156124",
           "name": "id",
           "type": 6,
           "flags": 1
@@ -23,130 +23,130 @@
       "relations": []
     },
     {
-      "id": "2:3461254210854617767",
-      "lastPropertyId": "3:5087402477027980399",
+      "id": "2:4749030018044070196",
+      "lastPropertyId": "3:574756828556962182",
       "name": "CoordinateLocalEntity",
       "properties": [
         {
-          "id": "1:4300623707401903235",
-          "name": "id",
-          "type": 6,
-          "flags": 1
-        },
-        {
-          "id": "2:5079107962356621047",
+          "id": "1:4944836938362846981",
           "name": "lon",
           "type": 8
         },
         {
-          "id": "3:5087402477027980399",
+          "id": "2:4062326517946898312",
           "name": "lat",
           "type": 8
+        },
+        {
+          "id": "3:574756828556962182",
+          "name": "id",
+          "type": 6,
+          "flags": 1
         }
       ],
       "relations": []
     },
     {
-      "id": "3:9192336508330026828",
-      "lastPropertyId": "7:9165181845112548066",
+      "id": "3:150152867497418059",
+      "lastPropertyId": "7:4847645746641927583",
       "name": "MainWeatherInfoLocalEntity",
       "properties": [
         {
-          "id": "1:4298114905731753084",
-          "name": "id",
-          "type": 6,
-          "flags": 1
-        },
-        {
-          "id": "2:5026349606310493349",
+          "id": "1:7846220782551510999",
           "name": "temp",
           "type": 9
         },
         {
-          "id": "3:5240301424725549896",
+          "id": "2:2540920901178068352",
           "name": "feelsLike",
           "type": 8
         },
         {
-          "id": "4:4305099678241748933",
+          "id": "3:3915479635085916058",
           "name": "tempMin",
           "type": 8
         },
         {
-          "id": "5:5862299152361159873",
+          "id": "4:8584998259690716389",
           "name": "tempMax",
           "type": 8
         },
         {
-          "id": "6:293333133141988668",
+          "id": "5:6337243429144738925",
           "name": "pressure",
           "type": 6
         },
         {
-          "id": "7:9165181845112548066",
+          "id": "6:3769601041942211231",
           "name": "humidity",
           "type": 6
+        },
+        {
+          "id": "7:4847645746641927583",
+          "name": "id",
+          "type": 6,
+          "flags": 1
         }
       ],
       "relations": []
     },
     {
-      "id": "4:6241373764159141860",
-      "lastPropertyId": "5:6291010900849653715",
+      "id": "4:2381800942354481187",
+      "lastPropertyId": "5:1147005129194528628",
       "name": "SunsetSunriseLocalEntity",
       "properties": [
         {
-          "id": "1:7852074505021439852",
+          "id": "1:1347442623250245756",
           "name": "type",
           "type": 6
         },
         {
-          "id": "2:3386216093346565803",
+          "id": "2:5457562273006794065",
           "name": "id",
           "type": 6,
           "flags": 1
         },
         {
-          "id": "3:9057616120145976128",
+          "id": "3:3197389866726461945",
           "name": "country",
           "type": 9
         },
         {
-          "id": "4:4980521017912740391",
+          "id": "4:5735296651796150739",
           "name": "sunrise",
-          "type": 9
+          "type": 6
         },
         {
-          "id": "5:6291010900849653715",
+          "id": "5:1147005129194528628",
           "name": "sunset",
-          "type": 9
+          "type": 6
         }
       ],
       "relations": []
     },
     {
-      "id": "5:2646356980437107104",
-      "lastPropertyId": "4:3920029365622128158",
+      "id": "5:2128202574536264139",
+      "lastPropertyId": "4:7816458642974796560",
       "name": "WeatherDescriptionLocalEntity",
       "properties": [
         {
-          "id": "1:7958998890392977809",
+          "id": "1:5189310158225736837",
           "name": "id",
           "type": 6,
           "flags": 1
         },
         {
-          "id": "2:185151375142886630",
+          "id": "2:3842688152102093354",
           "name": "main",
           "type": 9
         },
         {
-          "id": "3:2110290469239205967",
+          "id": "3:5015197835503966351",
           "name": "description",
           "type": 9
         },
         {
-          "id": "4:3920029365622128158",
+          "id": "4:7816458642974796560",
           "name": "icon",
           "type": 9
         }
@@ -154,155 +154,125 @@
       "relations": []
     },
     {
-      "id": "6:1808611098615804373",
-      "lastPropertyId": "13:8985474808027619856",
+      "id": "6:7214186939867233624",
+      "lastPropertyId": "9:6759570401098470137",
       "name": "WeatherInfoLocalEntity",
       "properties": [
         {
-          "id": "3:6394657301755561811",
+          "id": "1:7073220170814968776",
           "name": "mainId",
           "type": 11,
           "flags": 520,
-          "indexId": "2:8514966264585192641",
+          "indexId": "1:7653145386604242201",
           "relationTarget": "MainWeatherInfoLocalEntity"
         },
         {
-          "id": "4:5042431272608119124",
+          "id": "2:8658481711114297058",
           "name": "visibility",
-          "type": 9
+          "type": 6
         },
         {
-          "id": "5:1778835125343500197",
+          "id": "3:1134564110364817476",
           "name": "windId",
           "type": 11,
           "flags": 520,
-          "indexId": "3:2884523745363737944",
+          "indexId": "2:2143001172414270620",
           "relationTarget": "WindInfoLocalEntity"
         },
         {
-          "id": "6:3533506375304101950",
+          "id": "4:1485642820154883651",
           "name": "cloudsId",
           "type": 11,
           "flags": 520,
-          "indexId": "4:6619021802334768840",
+          "indexId": "3:6271925479728100989",
           "relationTarget": "CloudsLocalEntity"
         },
         {
-          "id": "7:1373125539525332389",
+          "id": "5:4046970696962758301",
           "name": "dt",
           "type": 9
         },
         {
-          "id": "8:7779962110016077875",
+          "id": "6:5302646288405915111",
           "name": "sysId",
           "type": 11,
           "flags": 520,
-          "indexId": "5:484075559269616283",
+          "indexId": "4:7517837576210169302",
           "relationTarget": "SunsetSunriseLocalEntity"
         },
         {
-          "id": "9:8208836753316543947",
-          "name": "timezone",
+          "id": "7:7960815754384568050",
+          "name": "timeZone",
           "type": 6
         },
         {
-          "id": "10:8008230289145083908",
+          "id": "8:7035202171554225647",
           "name": "id",
           "type": 6,
           "flags": 1
         },
         {
-          "id": "11:2510677696552961634",
+          "id": "9:6759570401098470137",
           "name": "name",
-          "type": 9,
-          "flags": 34848,
-          "indexId": "9:5388851329022072792"
-        },
-        {
-          "id": "13:8985474808027619856",
-          "name": "weatherThemeId",
-          "type": 11,
-          "flags": 520,
-          "indexId": "6:3328818796529849563",
-          "relationTarget": "WeatherThemeLocalEntity"
+          "type": 9
         }
       ],
       "relations": [
         {
-          "id": "1:4281757949125416941",
+          "id": "1:9129959591420871614",
           "name": "weather",
-          "targetId": "5:2646356980437107104"
+          "targetId": "5:2128202574536264139"
         }
       ]
     },
     {
-      "id": "7:3962831592385967162",
-      "lastPropertyId": "3:282724855969962684",
-      "name": "WindInfoLocalEntity",
+      "id": "7:19391231403855530",
+      "lastPropertyId": "1:4359170196303042200",
+      "name": "WeatherThemeLocalEntity",
       "properties": [
         {
-          "id": "1:6938484251426828505",
+          "id": "1:4359170196303042200",
           "name": "id",
           "type": 6,
           "flags": 1
-        },
-        {
-          "id": "2:5481480834145518703",
-          "name": "speed",
-          "type": 9
-        },
-        {
-          "id": "3:282724855969962684",
-          "name": "deg",
-          "type": 6
         }
       ],
       "relations": []
     },
     {
-      "id": "8:8827388458182144762",
-      "lastPropertyId": "5:8312217297488952861",
-      "name": "WeatherThemeLocalEntity",
+      "id": "8:853939006241248506",
+      "lastPropertyId": "3:8506926639109336361",
+      "name": "WindInfoLocalEntity",
       "properties": [
         {
-          "id": "1:2352114334661212234",
+          "id": "1:8183063618363603897",
+          "name": "speed",
+          "type": 8
+        },
+        {
+          "id": "2:6917294319572803479",
+          "name": "deg",
+          "type": 6
+        },
+        {
+          "id": "3:8506926639109336361",
           "name": "id",
           "type": 6,
           "flags": 1
-        },
-        {
-          "id": "4:8325933891333312625",
-          "name": "firstColorHex",
-          "type": 6
-        },
-        {
-          "id": "5:8312217297488952861",
-          "name": "secondColorHex",
-          "type": 6
         }
       ],
       "relations": []
     }
   ],
-  "lastEntityId": "8:8827388458182144762",
-  "lastIndexId": "9:5388851329022072792",
-  "lastRelationId": "1:4281757949125416941",
+  "lastEntityId": "8:853939006241248506",
+  "lastIndexId": "4:7517837576210169302",
+  "lastRelationId": "1:9129959591420871614",
   "lastSequenceId": "0:0",
   "modelVersion": 5,
   "modelVersionParserMinimum": 5,
   "retiredEntityUids": [],
-  "retiredIndexUids": [
-    3578032260382545551,
-    234992684515061082,
-    8226802502953832989
-  ],
-  "retiredPropertyUids": [
-    8185252375108885606,
-    5586747036336351195,
-    1093966185179143489,
-    1991451046200193590,
-    7236989518563952867
-  ],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
   "retiredRelationUids": [],
   "version": 1
 }

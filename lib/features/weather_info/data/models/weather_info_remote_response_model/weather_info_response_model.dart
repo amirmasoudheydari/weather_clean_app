@@ -7,12 +7,13 @@ import 'package:weather_clean_app/features/weather_info/data/models/weather_info
 import 'package:weather_clean_app/features/weather_info/data/models/weather_info_remote_response_model/sunset_sunrise_response_model.dart';
 import 'package:weather_clean_app/features/weather_info/data/models/weather_info_remote_response_model/weather_description_response_model.dart';
 import 'package:weather_clean_app/features/weather_info/data/models/weather_info_remote_response_model/wind_info_response_model.dart';
-import 'package:weather_clean_app/features/weather_info/domain/entities/clouds_eintity.dart';
-import 'package:weather_clean_app/features/weather_info/domain/entities/main_weather_entitiy.dart';
-import 'package:weather_clean_app/features/weather_info/domain/entities/sunset_sunrise_entity.dart';
-import 'package:weather_clean_app/features/weather_info/domain/entities/weather_description_entity.dart';
-import 'package:weather_clean_app/features/weather_info/domain/entities/weather_info_entity.dart';
+import 'package:weather_clean_app/features/weather_info/domain/entities/weather_remote_info_response_entity/clouds_entity.dart';
+import 'package:weather_clean_app/features/weather_info/domain/entities/weather_remote_info_response_entity/weather_description_entity.dart';
 import 'package:weather_clean_app/features/weather_info/utils/weather_type_enum.dart';
+
+import '../../../domain/entities/weather_remote_info_response_entity/main_weather_entity.dart';
+import '../../../domain/entities/weather_remote_info_response_entity/sunset_sunrise_entity.dart';
+import '../../../domain/entities/weather_remote_info_response_entity/weather_info_entity.dart';
 
 part 'weather_info_response_model.g.dart';
 
@@ -68,7 +69,7 @@ class WeatherInfoResponseModel extends DataMapper<WeatherInfoEntity> {
     return WeatherInfoEntity(
         weather: _weatherDescription,
         main: mainWeatherData?.mapToEntity() ?? const MainWeatherInfoEntity(),
-        visibility: 3,
+        visibility: '3',
         wind: windData?.mapToEntity(),
         clouds: cloudData?.mapToEntity() ?? const CloudsEntity(),
         dt: date?.fromTimestampToDate(),

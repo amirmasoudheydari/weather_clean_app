@@ -1,4 +1,4 @@
-import "package:http/src/response.dart" show Response;
+import 'package:http/http.dart';
 import 'package:weather_clean_app/core/commundomain/entities/api_result_model.dart';
 import 'package:weather_clean_app/core/utils/constants/app_constants.dart';
 import 'package:weather_clean_app/core/utils/helpers/extension_function/extension_function.dart';
